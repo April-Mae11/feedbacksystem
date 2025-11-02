@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #f5f7fa;
+  color: #333;
+}
+
+.dashboard {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 240px;
+  background: linear-gradient(180deg, #667eea, #764ba2);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 25px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.sidebar h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.sidebar nav a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 15px;
+  margin: 8px 0;
+  border-radius: 8px;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.sidebar nav a:hover, 
+.sidebar nav a.active {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateX(5px);
+}
+
+.logout {
+  background: #ff4b5c;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.logout:hover {
+  background: #e33c4e;
+}
+
+.main-content {
+  margin-left: 260px;
+  padding: 40px;
+  flex: 1;
+}
+
+.main-content h1 {
+  font-size: 28px;
+  color: #4b4b4b;
+  margin-bottom: 25px;
+  border-left: 6px solid #667eea;
+  padding-left: 12px;
+}
+
+.table-container {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background: linear-gradient(90deg, #667eea, #764ba2);
+  color: white;
+}
+
+th, td {
+  padding: 12px 14px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+  font-size: 15px;
+}
+
+tbody tr:hover {
+  background: #f6f8ff;
+}
+
+.delete-btn {
+  background: #ff5b5b;
+  color: white;
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.delete-btn:hover {
+  background: #ff3333;
+}
